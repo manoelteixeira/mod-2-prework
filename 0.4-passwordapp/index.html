@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title -->
+      <h1>Generate a <br /><span>Random Password</span></h1>
+      <div class="display">
+        <!-- Input Box -->
+        <input type="text" id="password" placeholder="Password" />
+        <img src="./images/copy.png" onclick="copyPassword()" />
+      </div>
+      <!-- Generate Password -->
+      <button onclick="createPassWord()">
+        <img src="./images/generate.png" />
+        Generate Password
+      </button>
+    </div>
+    <!-- Javascrip -->
+    <script src="./script.js"></script>
+  </body>
+</html>
