@@ -5,10 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Music Player App</title>
+    <script src="https://kit.fontawesome.com/761ccca25e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- App -->
+    <div class="container">
+        <div class="music-player">
+            <!-- Top Bar -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <!-- Content -->
+            <img src="./media/468-thumbnail.png" class="song-img">
+            <h1>GO!</h1>
+            <h2>NEFFEX</h2>
+
+            <audio id="song"> <!-- add controls to get default control -->
+                <source src="./media/NEFFEX - Go.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="control-icon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
     <!-- Link Javascript -->
     <script src="./script.js"></script>
 </body>
