@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Stopwatch</title>
 </head>
 
 <body>
+    <div class="stopwatch">
+        <!-- Time -->
+        <h1 id="time-display">00:00:00</h1>
+        <!-- Controls -->
+        <div class="buttons">
+            <img src="./images/stop.png" onclick="pauseWatch()">
+            <img src="./images/start.png" onclick="startWatch()">
+            <img src="./images/reset.png" onclick="resetWatch()">
+        </div>
+    </div>
     <!-- Link Javascript -->
     <script src="./script.js"></script>
 </body>
