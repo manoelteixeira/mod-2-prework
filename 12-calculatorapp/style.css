@@ -1,6 +1,12 @@
 /* Definitions */
-/* :root {
-} */
+:root {
+  --white: #fff;
+  --light-blue: #e3f9ff;
+  --dark-blue: #3a4452;
+  --light-shadow: rgba(255, 255, 255, 0.1);
+  --dark-shadow: rgba(0, 0, 0, 0.2);
+  --light-green: #33ffd8;
+}
 
 /* All HTML Elements */
 * {
@@ -8,4 +14,55 @@
   padding: 0;
   font-family: "Poppins", serif;
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background: var(--dark-blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px var(--light-shadow),
+    5px 5px 15px var(--dark-shadow);
+  background: transparent;
+  font-size: 20px;
+  color: var(--white);
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+form input.equal {
+  width: 145px;
+}
+
+form input.operator {
+  color: var(--light-green);
 }
